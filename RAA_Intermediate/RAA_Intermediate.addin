@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <!--<AddIn Type="Command">
+    <Text>RAA_Intermediate - Command 1</Text>
+    <Description>Some description for RAA_Intermediate</Description>
+    <Assembly>RAA_Intermediate.dll</Assembly>
+    <FullClassName>RAA_Intermediate.Command1</FullClassName>
+    <ClientId>2be31780-8ed5-471a-a7c0-cede6efd0529</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+  <AddIn Type="Command">
+    <Text>RAA_Intermediate - Command 2</Text>
+    <Description>Some description for RAA_Intermediate</Description>
+    <Assembly>RAA_Intermediate.dll</Assembly>
+    <FullClassName>RAA_Intermediate.Command2</FullClassName>
+    <ClientId>5c08b815-f828-49d6-b86e-be3b85f8dec5</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>-->
+  <AddIn Type="Application">
+    <Name>RAA_Intermediate</Name>
+    <Assembly>RAA_Intermediate.dll</Assembly>
+    <FullClassName>RAA_Intermediate.App</FullClassName>
+    <ClientId>54329ab4-8a97-4fa6-95bd-afb74ded1188</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>
