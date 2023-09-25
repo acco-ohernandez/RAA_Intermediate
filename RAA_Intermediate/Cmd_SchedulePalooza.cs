@@ -73,30 +73,6 @@ namespace RAA_Intermediate
 
             return Result.Succeeded;
         }
-        private double GetTotalViewBasedArea(List<Element> rooms, Document doc, string viewBasedAreaParameterName)
-        {
-            double totalArea = 0.0;
-
-            foreach (var room in rooms)
-            {
-                // Assuming you are working with Room elements
-                if (room is Room roomInstance)
-                {
-                    // Look up the View-Based area parameter by name
-                    Parameter viewBasedAreaParam = roomInstance.LookupParameter(viewBasedAreaParameterName);
-
-                    if (viewBasedAreaParam != null && viewBasedAreaParam.HasValue)
-                    {
-                        double roomArea = viewBasedAreaParam.AsDouble();
-                        totalArea += roomArea;
-                    }
-                }
-            }
-
-            return totalArea;
-        }
-
-
 
         private ViewSchedule AddParamsToCreatedSchedule(ViewSchedule schedule, List<Element> rooms, string departmentName)
         {
@@ -148,7 +124,6 @@ namespace RAA_Intermediate
             return curSchedule;
         }
 
-
         /// <summary>
         /// Creates a new department-specific view schedule for rooms in the document.
         /// </summary>
@@ -172,7 +147,6 @@ namespace RAA_Intermediate
             return newSchedule;
         }
 
-
         private string GetDepartment(Element room)
         {
             // Get the "Department" parameter in the room.
@@ -183,6 +157,7 @@ namespace RAA_Intermediate
             // if department not null return department as value string, else returne "No Department"
             return department != null ? department.AsValueString() : "No Department";
         }
+
 
         internal static PushButtonData GetButtonData()
         {
